@@ -8,7 +8,7 @@ function App() {
     setCity(e.target.value)
   }
   const handleSeach = () => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=5c7280c2bbb24def8ac112252220808&q=${city}&lang=pt`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=5c7280c2bbb24def8ac112252220808&q=${city}&lang=pt`)
     .then((response) => {
       if(response.status === 200) {
         return response.json();
